@@ -52,7 +52,7 @@ function customerBuy() {
         inquirer.prompt([{
             name: 'id',
             type: 'input',
-            message: 'What is the ID of the product you would like to buy?',
+            message: 'What is the ID of the product you would like to buy?(100,200-1000)',
             //validates that user input is a number and requires it
             validate: function(value) {
                 if (isNaN(value) === false) {
@@ -63,7 +63,7 @@ function customerBuy() {
         }, {
             name: 'quantity',
             type: 'input',
-            message: 'How many do you want order?',
+            message: 'How many do you want order?(1-10)',
             validate: function(value) {
                     if (isNaN(value) === false) {
                         return true;
